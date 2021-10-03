@@ -566,7 +566,7 @@ class OutputSplitter:
             else:
                 return bz2.BZ2File('wiki.txt.bz2', 'ab')
         else:
-            return open(file_name, 'a')
+            return open(file_name, 'a', encoding='utf-8')
 
     def dir_name(self):
         ### split into two kinds of directories:
